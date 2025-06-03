@@ -63,7 +63,7 @@ const Login = ({ onAuthenticated }) => {
           </p>
           <div className="mt-4 px-4 py-2 bg-orange-500/20 backdrop-blur-sm rounded-lg border border-orange-400/30">
             <p className="text-orange-100 text-sm">
-              🔒 Authorized Access Required
+              🔒 Authorised Access Required
             </p>
           </div>
         </div>
@@ -139,16 +139,7 @@ const Login = ({ onAuthenticated }) => {
           <div className="mt-6 pt-6 border-t border-white/20">
             <p className="text-white/70 text-xs text-center">
               This presentation contains confidential business information.<br />
-              © 2024 Scratchie Pty Ltd. All rights reserved.
-            </p>
-          </div>
-        </div>
-
-        {/* Demo Credentials Hint (Remove in production) */}
-        <div className="mt-6 text-center">
-          <div className="inline-block bg-gray-900/50 backdrop-blur-sm rounded-lg px-4 py-2 border border-gray-600/30">
-            <p className="text-gray-300 text-xs">
-              Demo: ebta_admin / EBTA2024Safety!
+              © 2025 Scratchie Pty Ltd. All rights reserved.
             </p>
           </div>
         </div>
