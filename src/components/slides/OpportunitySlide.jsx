@@ -27,8 +27,8 @@ const OpportunitySlide = () => (
           <div>
             <h4 className="font-bold text-lg mb-3">Research Shows:</h4>
             <ul className="space-y-3">
-              <li className="text-lg">• Immediate rewards create 2.2x stronger behavioral reinforcement</li>
-              <li className="text-lg">• 90% of employees work harder when recognized</li>
+              <li className="text-lg">• Immediate rewards create 2.2x stronger behavioural reinforcement</li>
+              <li className="text-lg">• 90% of employees work harder when recognised</li>
               <li className="text-lg">• Recognition within seconds creates lasting habits</li>
             </ul>
           </div>

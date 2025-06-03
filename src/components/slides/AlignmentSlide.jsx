@@ -51,12 +51,12 @@ const AlignmentSlide = () => (
         <div className="bg-white/90 p-6 rounded-lg text-center transform hover:scale-105 transition-transform">
           <div className="text-5xl mb-3">🌉</div>
           <p className="font-bold text-lg mb-2">Bridge Works</p>
-          <p className="text-base">Recognize complex lifting operations done safely</p>
+          <p className="text-base">Recognise complex lifting operations done safely</p>
         </div>
         <div className="bg-white/90 p-6 rounded-lg text-center transform hover:scale-105 transition-transform">
           <div className="text-5xl mb-3">🚌</div>
           <p className="font-bold text-lg mb-2">Busway Construction</p>
-          <p className="text-base">Incentivize quality work on Melbourne's first busway</p>
+          <p className="text-base">Incentivise quality work on Melbourne's first busway</p>
         </div>
       </div>
     </div>

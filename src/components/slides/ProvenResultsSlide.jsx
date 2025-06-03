@@ -46,20 +46,20 @@ const ProvenResultsSlide = () => (
           </div>
           <div className="bg-white/90 p-5 rounded-lg">
             <p className="italic text-lg mb-2">"Teams are actively seeking out opportunities to demonstrate safe practices."</p>
-            <p className="text-sm text-gray-600">- Major Construction Client</p>
+            <p className="text-sm text-gray-600">- John Holland Group Manager</p>
           </div>
         </div>
       </div>
     </div>
     <div className="bg-orange-100/80 backdrop-blur p-8 rounded-xl shadow-lg">
-      <h3 className="font-bold text-2xl mb-6 text-orange-800">Leading Indicators of Success</h3>
+      <h3 className="font-bold text-2xl mb-6 text-orange-800">Leading Indicators of Success - Targets</h3>
       <div className="grid grid-cols-4 gap-6 text-center">
         <div className="transform hover:scale-110 transition-transform">
           <div className="text-4xl font-bold text-orange-600 mb-2">3x</div>
           <p className="text-lg">Increase in near-miss reporting</p>
         </div>
         <div className="transform hover:scale-110 transition-transform">
-          <div className="text-4xl font-bold text-green-600 mb-2">82%</div>
+          <div className="text-4xl font-bold text-green-600 mb-2">80%</div>
           <p className="text-lg">More likely to report hazards</p>
         </div>
         <div className="transform hover:scale-110 transition-transform">
