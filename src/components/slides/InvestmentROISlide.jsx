@@ -1,8 +1,8 @@
 import React from 'react';
 
 const InvestmentROISlide = () => {
-  const [rewardBudget, setRewardBudget] = React.useState(30);
-  const [currentMonth, setCurrentMonth] = React.useState(12);
+  const [rewardBudget, setRewardBudget] = React.useState(10);
+  const [currentMonth, setCurrentMonth] = React.useState(2);
   
   // Bell curve workforce ramp-up (percentage of peak workforce)
   const workforceRampUp = [
