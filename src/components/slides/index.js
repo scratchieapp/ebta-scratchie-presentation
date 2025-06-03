@@ -1,0 +1,10 @@
+export { default as TitleSlide } from './TitleSlide';
+export { default as SafetyLeadershipSlide } from './SafetyLeadershipSlide';
+export { default as OpportunitySlide } from './OpportunitySlide';
+export { default as ScratchieOverviewSlide } from './ScratchieOverviewSlide';
+export { default as AlignmentSlide } from './AlignmentSlide';
+export { default as ProvenResultsSlide } from './ProvenResultsSlide';
+export { default as ImplementationSlide } from './ImplementationSlide';
+export { default as ExpansionVisionSlide } from './ExpansionVisionSlide';
+export { default as InvestmentROISlide } from './InvestmentROISlide';
+export { default as CallToActionSlide } from './CallToActionSlide'; 
