@@ -189,7 +189,18 @@ const ScratchieBasicSlide = () => {
         </div>
         <div className="mt-6 text-center">
           <p className="font-bold text-3xl text-green-600">Conservative ROI: 5-10x platform investment</p>
-          <p className="text-lg text-gray-700 mt-2">From basic Scratchie engagement alone</p>
+          <p className="text-lg text-gray-700 mt-2 mb-4">From basic Scratchie engagement alone</p>
+          <a 
+            href="https://calculator.scratchie.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block bg-green-600 text-white text-lg px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold"
+          >
+            Comprehensive ROI Calculator →
+          </a>
+          <p className="text-sm text-gray-600 mt-2">
+            Get detailed, customized ROI analysis for your specific project
+          </p>
         </div>
       </div>
     </div>
