@@ -6,5 +6,6 @@ export { default as AlignmentSlide } from './AlignmentSlide';
 export { default as ProvenResultsSlide } from './ProvenResultsSlide';
 export { default as ImplementationSlide } from './ImplementationSlide';
 export { default as ExpansionVisionSlide } from './ExpansionVisionSlide';
-export { default as InvestmentROISlide } from './InvestmentROISlide';
+export { default as ScratchieBasicSlide } from './ScratchieBasicSlide';
+export { default as TurboChargingSlide } from './TurboChargingSlide';
 export { default as CallToActionSlide } from './CallToActionSlide'; 

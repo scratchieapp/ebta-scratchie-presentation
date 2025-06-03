@@ -9,7 +9,8 @@ import {
   ProvenResultsSlide,
   ImplementationSlide,
   ExpansionVisionSlide,
-  InvestmentROISlide,
+  ScratchieBasicSlide,
+  TurboChargingSlide,
   CallToActionSlide
 } from './slides';
 
@@ -67,12 +68,18 @@ const Presentation = () => {
     },
     {
       id: 9,
-      title: "Investment & Returns",
-      subtitle: "Clear Value for EBTA",
-      component: InvestmentROISlide
+      title: "Scratchie Platform Investment",
+      subtitle: "Simple, Transparent Platform Fee",
+      component: ScratchieBasicSlide
     },
     {
       id: 10,
+      title: "Turbo Charging Scratchie",
+      subtitle: "Multi-Stakeholder Investment Model",
+      component: TurboChargingSlide
+    },
+    {
+      id: 11,
       title: "Next Steps",
       subtitle: "Let's Amplify EBTA's Safety Excellence Together",
       component: CallToActionSlide
