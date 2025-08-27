@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favicon PNG Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .icon-preview {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        canvas {
+            border: 1px solid #ddd;
+            display: block;
+            margin: 5px auto;
+        }
+        button {
+            background: #FF6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #e55500;
+        }
+        .instructions {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Scratchie Favicon PNG Generator</h1>
+        <p>This page helps generate PNG versions of the Scratchie carrot favicon for browsers that don't support SVG favicons.</p>
+        
+        <div id="icons"></div>
+        
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ol>
+                <li>Click each "Download" button to save the PNG file</li>
+                <li>Save the files with the exact names shown</li>
+                <li>Place them in the <code>/public</code> directory</li>
+                <li>For the .ico file, you'll need to use an online converter or tool to combine the PNGs</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        const sizes = [
+            { size: 16, name: 'favicon-16x16.png' },
+            { size: 32, name: 'favicon-32x32.png' },
+            { size: 180, name: 'apple-touch-icon.png' },
+            { size: 192, name: 'android-chrome-192x192.png' },
+            { size: 512, name: 'android-chrome-512x512.png' }
+        ];
+
+        const svgUrl = '/favicon.svg';
+        const container = document.getElementById('icons');
+
+        // Load the SVG
+        fetch(svgUrl)
+            .then(response => response.text())
+            .then(svgText => {
+                sizes.forEach(({ size, name }) => {
+                    const div = document.createElement('div');
+                    div.className = 'icon-preview';
+                    
+                    const canvas = document.createElement('canvas');
+                    canvas.width = size;
+                    canvas.height = size;
+                    
+                    const ctx = canvas.getContext('2d');
+                    const img = new Image();
+                    
+                    // Create a data URL from the SVG
+                    const svgBlob = new Blob([svgText], { type: 'image/svg+xml' });
+                    const url = URL.createObjectURL(svgBlob);
+                    
+                    img.onload = function() {
+                        // Fill with white background for non-transparent versions
+                        if (name.includes('favicon-')) {
+                            ctx.fillStyle = 'white';
+                            ctx.fillRect(0, 0, size, size);
+                        }
+                        
+                        ctx.drawImage(img, 0, 0, size, size);
+                        URL.revokeObjectURL(url);
+                        
+                        // Create download button
+                        const button = document.createElement('button');
+                        button.textContent = `Download ${name}`;
+                        button.onclick = () => {
+                            canvas.toBlob(blob => {
+                                const a = document.createElement('a');
+                                a.href = URL.createObjectURL(blob);
+                                a.download = name;
+                                a.click();
+                            });
+                        };
+                        
+                        div.innerHTML = `<h4>${name} (${size}x${size})</h4>`;
+                        div.appendChild(canvas);
+                        div.appendChild(button);
+                    };
+                    
+                    img.src = url;
+                    container.appendChild(div);
+                });
+            });
+    </script>
+</body>
+</html>
