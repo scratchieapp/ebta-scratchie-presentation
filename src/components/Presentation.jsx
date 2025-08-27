@@ -107,7 +107,7 @@ const Presentation = () => {
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2">
             <img 
-              src="https://i.imgur.com/IB0wCmX.png" 
+              src="/images/square-transparent-carrot.svg" 
               alt="Scratchie Icon" 
               className="w-6 h-6"
             />

@@ -54,9 +54,13 @@ const Login = ({ onAuthenticated }) => {
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-auto h-20 bg-white/10 backdrop-blur-sm rounded-2xl mb-6 px-6">
             <img 
-              src="https://i.imgur.com/3LEMb7L.png" 
+              src="/images/scratchie-logo-white.svg" 
               alt="Scratchie Logo"
               className="h-12 object-contain"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.parentElement.innerHTML = '<div class="text-2xl font-bold text-white">SCRATCHIE</div>';
+              }}
             />
           </div>
           <h1 className="text-3xl font-bold text-white mb-2">

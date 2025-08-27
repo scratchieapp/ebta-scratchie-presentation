@@ -6,7 +6,7 @@ const TitleSlide = () => (
     <div 
       className="absolute inset-0 bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: 'url(https://i.imgur.com/A55LIAj.jpeg)'
+        backgroundImage: 'url(/images/ebta-render-1b.jpg)'
       }}
     />
     <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-white/50 to-white/60" />
@@ -16,7 +16,7 @@ const TitleSlide = () => (
       {/* Scratchie Logo - smaller and better positioned */}
       <div className="pt-8 pb-24">
         <img 
-          src="https://i.imgur.com/kIU5cGL.png" 
+          src="/images/scratchie-logo-black.svg" 
           alt="Scratchie Logo" 
           className="h-12 w-auto"
         />

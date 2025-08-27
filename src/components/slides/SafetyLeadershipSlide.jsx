@@ -14,7 +14,7 @@ const SafetyLeadershipSlide = () => (
           </li>
           <li className="flex items-start">
             <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-4 flex-shrink-0" />
-            <span className="text-lg">Immersive VR safety training at Victorian Tunnelling Centre</span>
+            <span className="text-lg">Immersive VR safety training at Consolidation Centre (Project Management Office)</span>
           </li>
           <li className="flex items-start">
             <CheckCircle className="w-6 h-6 text-green-500 mt-1 mr-4 flex-shrink-0" />
@@ -41,7 +41,7 @@ const SafetyLeadershipSlide = () => (
           </ul>
         </div>
         <div className="bg-yellow-50 p-6 rounded-xl shadow-sm">
-          <h3 className="font-bold text-xl mb-4 text-yellow-800">Laing O'Rourke's Next Gear Philosophy</h3>
+          <h3 className="font-bold text-xl mb-4 text-yellow-800">Laing O'Rourke: Rethinking Safety through Inclusion & Wellbeing</h3>
           <div className="grid grid-cols-3 gap-3">
             <div className="bg-white p-3 rounded text-center">
               <Users className="w-8 h-8 text-blue-600 mx-auto mb-2" />

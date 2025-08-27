@@ -11,7 +11,7 @@ const OpportunitySlide = () => (
             <p className="mb-4 text-lg">✓ Strong safety systems in place</p>
             <p className="mb-4 text-lg">✓ Monthly recognition programs</p>
             <p className="mb-4 text-lg">✓ Regular toolbox talks</p>
-            <p className="mb-4 text-lg">✓ Mental health initiatives (MATES)</p>
+            <p className="mb-4 text-lg">✓ EBTA wellbeing program</p>
           </div>
           <div>
             <p className="mb-4 text-lg text-orange-600">⚡ Recognition delayed weeks/months</p>
