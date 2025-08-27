@@ -50,7 +50,7 @@ const TitleSlide = () => (
       <div className="flex justify-between items-end pb-12">
         <div className="text-gray-700">
           <p className="text-lg font-medium mb-1">Presented to</p>
-          <p className="text-xl font-semibold text-gray-900">James Smith & EBTA Leadership Team</p>
+          <p className="text-xl font-semibold text-gray-900">Tim Neilson & EBTA Leadership Team</p>
           <p className="text-base text-gray-600 mt-1">Eastern Freeway – Burke to Tram Alliance</p>
         </div>
         
